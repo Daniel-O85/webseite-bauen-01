@@ -1,0 +1,518 @@
+/******* Diese CSS Befehle greifen für alle Displaygrößen ******/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
+/*** Kopfzeile ***/
+
+/*** Inhalt wird flexibel mit rundherum Raum ***/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 60px
+}
+
+/*** Menü in der Kopfzeile wird flexibel ***/
+header .header-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*** innerer Abstand, Listenstil (Punkt) entfernt
+     Schriftgröße angepasst ***/
+header .header-menu ul li {
+    padding: 20px;
+    list-style-type: none;
+    font-size: 10px;
+}
+
+/*** Text Decoration(Unterstrich) entfernt
+     Schriftfarbe, Art und Dicke geändert ***/
+header .header-menu ul li a {
+    text-decoration: none;
+    color: rgb(62, 55, 55);
+    font-family: "Poppin";
+    font-weight: bold;
+}
+
+/*** Skalierung ändert sich wenn die Maus drauf ist ***/
+header .header-menu ul li:hover {
+    transform: scale(1.50);
+}
+
+/*** Hover für Social img Header und Footer ***/
+.hover-facebook {
+    background-image: url(./bilder/fb_icon.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.hover-facebook:hover {
+    background-image: url(./bilder/fb_icon_hover.png);
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.hover-instagramm {
+    background-image: url(./bilder/insta_icon.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.hover-instagramm:hover {
+    background-image: url(./bilder/insta_icon_hover.png);
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+.hover-youtube {
+    background-image: url(./bilder/youtube_icon.png);
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+}
+
+.hover-youtube:hover {
+    background-image: url(./bilder/youtube_icon_hover.png);
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+
+/*** Hauptinhalt ***/
+
+/***  ***/
+main .main-oben {
+    background-image: url(./bilder/naturebg-1.png), url(./bilder/product.png);
+
+    background-size: auto 400px, auto 320px;
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: 0 50%, 100% 50%;
+    background-attachment: fixed, fixed;
+}
+
+/***  ***/
+main .main-unten {
+    background-image: url(./bilder/naturebg-2.png), url(./bilder/cs-bg.png);
+
+    background-size: auto 400px, auto 320px;
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: 0 50%, 100% 50%;
+    background-attachment: fixed, fixed;
+}
+
+/****** Grauer Kasten *****/
+
+/*** Hintergrundfarbe eingefügt, Höhe festgelegt,
+     Inhalt flexibel gemacht, Inhalt nach Rechts ausgerichtet
+     inneren und äußeren gegeben ***/
+main .main-grauer-kasten {
+    background-color: rgb(205, 205, 205);
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 80px;
+    margin-top: 20px;
+
+}
+
+/*** Schriftart, Stil, Größe, Dicke und Farbe geändert  ***/
+main .main-grauer-kasten h1 {
+    font-family: "Great Vibes",
+        cursive;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 580;
+    color: white;
+}
+
+/******* Texte im Main *******/
+
+/*** Schriftart, Größe, und Farbe geändert 
+     Text Links ausgrichtet ***/
+main p {
+    font-family: "Poppin";
+    color: rgb(62, 55, 55);
+    font-size: 10px;
+    text-align: left;
+}
+
+/**** Überschriften ****/
+
+/*** Schriftart und Farbe angepasst  ***/
+h2 {
+    font-weight: bold;
+    color: rgb(62, 55, 55);
+}
+
+/*** Schriftart, Stil, Größe, Dicke und Farbe angepasst  ***/
+h3 {
+    font-family: "Great Vibes",
+        cursive;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(62, 55, 55);
+}
+
+/*** Schriftart, Stil, Dicke und Farbe angepasst  ***/
+h4 {
+    font-family: "Poppin";
+    font-style: normal;
+    font-weight: bold;
+    color: rgb(141, 28, 28);
+}
+
+/*** INTRO ***/
+
+/*** Breite und Höhe angepasst ***/
+main .main-intro img {
+    width: 250px;
+    height: 130px;
+}
+
+/*** Skalierung ändert sich wenn die Maus drauf ist ***/
+main .main-intro img:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px black;
+}
+
+/*** Inhalt wird flexibel, mittig ausgerichtet
+     Text wird mittig ausgerichtet, äußeren abstand gegeben ***/
+main .main-intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+}
+
+/*** Breite angepasst, mittig zentriert
+     äußeren abstand gegeben ***/
+#zu-intro {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*** Breite angepasst, Linken und Rechten außenabstand gegeben ***/
+main .main-intro div {
+    width: 250px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+/*** STORY ***/
+
+/*** Text mittig zentriert ***/
+#zu-story {
+    text-align: center;
+}
+
+/*** Inhalt wird flexibel und mittig zentriert,
+     und bekommt äußeren abstand ***/
+main .main-story {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/*** Breite angepasst ***/
+main .main-story img {
+    width: 400px;
+}
+
+/*** Skalierung ändert sich wenn die Maus drauf ist ***/
+main .main-story img:hover {
+    transition: 0.2s;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px black;
+}
+
+/*** Breite angepasst, inneren Abstand gegeben ***/
+main .main-story p {
+    width: 400px;
+    padding: 10px;
+}
+
+/*** Farbe und Schriftart geändert ***/
+main .main-story p b {
+    color: rgb(141, 28, 28);
+    font-size: 15px;
+}
+
+/*** Inhalt wird flexibel und mittig zentriert
+     Breite angepasst, inneren abstand gegeben ***/
+main .main-story .main-pure-cotton {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    ;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*** Inhalt wird flexibel und zentriert,
+     Breite angepasst ***/
+main .main-story .main-precision {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    ;
+    justify-content: center;
+}
+
+/*** BANNER (TRENDY LOOK) ***/
+
+/*** Hintergrundbild eingefügt, wird in Vollbild angezeigt
+     Höhe angepasst, Text mittig zentriert inneren und äußeren Abstand gegeben ***/
+main .main-banner {
+    background-image: url(./bilder/cashmere_bg_01.jpg);
+    background-size: cover;
+    height: 120px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*** Textfarbe, Größe und Dicke angepasst
+     und einen Schatten gegeben ***/
+main .main-banner h3,
+main .main-banner p {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/*** Schriftgröße und Dicke angepasst
+     Text mittig zentriert ***/
+main .main-banner p {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*** Breite angepasst, Rahmen gegeben
+     Hintergrund und Schriftfarbe geändert
+     inneren Abstand gegeben ***/
+main .main-banner button {
+    width: 120px;
+    border: solid 1px white;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 3px;
+}
+
+/*** Hintergrundfarbe geändert ***/
+main .main-banner button:hover {
+    background-color: grey;
+    box-shadow: 5px 5px 10px black;
+}
+
+/***** JOURNAL *****/
+
+/*** Text mittig zentriert, Breite angepasst ***/
+main .main-journal h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+main .main-journal .journal-uberschrift{
+    color: rgb(62, 55, 55);
+    margin-top: 50px;
+}
+
+
+/*** Inhalt wird flexibel mit Platz rundherum
+     äußeren abstand gegeben, Zeilenhöhe angepasst***/
+main .main-journal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+    line-height: 15px;
+}
+
+
+/*** Breite und Höhe geändert ***/
+main .main-journal img {
+    width: 120px;
+    height: 80px;
+}
+
+/*** STORIES ***/
+
+/*** Text mittig zentriert, Breite angepasst ***/
+main .main-stories h3 {
+    text-align: center;
+    width: 100%;
+}
+
+/*** Hintergrund und Schriftfarbe geändert
+     Rahmen entfernt, inneren Abstand gegeben 
+     Breite angepasst ***/
+main .main-stories button {
+    background-color: rgb(95, 82, 82);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100px;
+}
+
+/*** Hintergrundfarbe geändert ***/
+main .main-stories button:hover {
+    background-color: rgb(165, 153, 153);
+    box-shadow: 5px 5px 10px black;
+}
+
+/*** Inhalt wird flexibel und mittig zentriert
+     oberen äußeren Abstand gegeben
+     Überfluss deaktiviert ***/
+main .main-stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+/*** äußeren Abstand gegeben ***/
+main .main-stories div {
+    margin: 10px;
+}
+
+/*** Inhalt wird flexibel und mittig zentriert
+     Höhe und Breite angepasst Hintergrundbild eigefügt
+     Hintergrund Größe, Wiederholung und Position angepasst
+     Inhalt vertikal zentriert ***/
+main .main-stories .stories-women {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 78%;
+    height: 300px;
+    background-image: url(./bilder/store_women.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+}
+
+ /*** Inhalt wird flexibel und mittig zentriert
+     Höhe und Breite angepasst Hintergrundbild eigefügt
+     Hintergrund Größe, Wiederholung und Position angepasst
+     Inhalt vertikal zentriert ***/
+ main .main-stories .stories-men {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+    background-repeat: no-repeat;
+    width: 27%;
+    background-size: 100%;
+    background-image: url(./bilder/store_men.jpg);
+    background-position: center center;
+    align-items: center;
+}
+
+/*** Inhalt wird flexibel und mittig zentriert
+     Höhe und Breite angepasst Hintergrundbild eigefügt
+     Hintergrund Größe, Wiederholung und Position angepasst
+     Inhalt vertikal zentriert ***/
+ main .main-stories .stories-kids {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+    width: 50%;
+    background-image: url(./bilder/store_kids.jpg);
+    background-size: cover;
+    background-position: top center;
+    align-items: center;
+}
+
+/*** Skalierung ändert sich wenn die Maus drauf ist ***/
+main .main-stories div:hover {
+    transition: 0.2s;
+    background-size: 120%;
+    overflow: hidden;
+}
+
+/*** FOOTER ***/
+
+/*** oberen äuseren Abstand angepasst ***/
+footer {
+    margin-top: 50px;
+}
+
+/*** Breite angepasst, mittig zentriert ***/
+footer .footer-img {
+    width: 100%;
+    text-align: center;
+}
+
+/***  ***/
+footer .footer-img img {
+    width: 49.8%;
+    height: 250px;
+}
+
+/*** Inhalt wird flexibel mit Raum rundherum
+     Hintergrundfarbe gegeben ***/
+footer .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(205, 205, 205);
+}
+
+/*** oberen inneren Abstand gegeben 
+     Breite angepasst ***/
+footer .footer-bottom img {
+    padding-top: 20px;
+    width: 50px;
+}
+
+/*** Inhalt wir flexibel und vertikal zentriert ***/
+footer .footer-bottom .social-img,
+header .social-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*** Breite angepasst, äußernen Abstand gegeben ***/
+footer .footer-bottom .social-img div,
+header .social-img div {
+    width: 20px;
+    margin: 5px;
+}
+
+/*** Inhalt wird flexibel ***/
+footer .footer-bottom .footer-list ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*** List Stil (Punkte) entfernt 
+     inneren Abstand gegeben, Schriftgröße geändert***/
+footer .footer-bottom .footer-list ul li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 10px;
+}
+
+/*** Breite angepasst Text zentriert
+     Schriftgröße geändert ***/
+footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
